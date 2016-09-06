@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	
+<head>
+	<title>ACTORS</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css"/>
+	<script src="angular.js"></script>
+	<script src="app/app.js"></script> 
+	
+</head>	
+	<body>
+		<div ng-controller="myCtrl" >
+				<input ng-model="query">
+		<button ng-click="sort('up')">Up</button>
+		<button ng-click="sort('down')">down</button>
+		<hr>
+		<div ng-repeat="actor in actors | filter:{name:query} | orderBy:upDown" class="ds">
+			<img src="{{actor.img}}"/><br>
+		<a href="{{actor.link}}">{{actor.name}}</a><br>
+		</div>
+		</div>
+	</body>
+	
+	
+	
+	
+</html>

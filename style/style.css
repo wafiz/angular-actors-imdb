@@ -1,0 +1,23 @@
+img{
+	width:200px;
+	height:200px;
+	margin:10px;
+}
+.ds{
+	width:250px;
+	height:250px;
+	float:left;
+	list-style: none;
+	text-align: center;
+	margin:10px;
+}
+ul li a{
+	text-decoration: none;
+}
+img:hover{
+	border:1px solid red;
+    
+}
+input{
+	margin-left:20px;
+}
